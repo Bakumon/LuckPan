@@ -10,8 +10,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.github.bakumon.luckpan.MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:text="选择ID"/>
+        <NumberPicker
+            android:id="@+id/np_choice_id"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+    <io.github.bakumon.luckpan.view.LuckPan
+        android:id="@+id/luck_pan"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:layout_height="300dp" />
+    <ImageView
+        android:id="@+id/iv_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:src="@drawable/button_luck_start"
+        android:layout_centerInParent="true"
+        />
 </RelativeLayout>
