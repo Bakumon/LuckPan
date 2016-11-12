@@ -15,13 +15,13 @@ API:
 
 | 方法          | 参数           | 说明  |
 | :-------------|:-------------| :-----|
-| setPrizeVoList(List\<PrizeVo\>) | PrizeVo 实体集合，PrizeVo 实体包含 ID、title 等属性 | 设置奖项集合 |
-| setDarkColor(int) | 颜色，如 Color.rgb(82, 182, 197) | 设置转盘上的深色 |
-| setShallowColor(int) | 颜色，如 Color.rgb(186, 226, 232) | 设置转盘上的浅色色 |
-| setCircleNumRange(int, int) | 转动圈数的范围，如 9～15 | 设置转动圈数的范围 |
-| setOneCircleMillisRange(long, long) | 每圈平均用时毫秒数的范围，如 400～600 | 设置平均转动一圈用时的范围 |
-| setOnLuckPanAnimatorEndListener(listener)  | 转盘停止监听器 | 设置转盘停止监听器 |
-| start(int) | 选中奖项的 ID | 转盘开始转动，并停在 ID 值对应的位置上 |
+| setPrizeVoList(List\<PrizeVo\>) | PrizeVo 实体集合，PrizeVo 实体包含 ID、title 等属性 | (必须)设置奖项集合 |
+| setDarkColor(int) | 颜色，如 Color.rgb(82, 182, 197) | (非必须,有默认)设置转盘上的深色 |
+| setShallowColor(int) | 颜色，如 Color.rgb(186, 226, 232) | (非必须,有默认)设置转盘上的浅色色 |
+| setCircleNumRange(int, int) | 转动圈数的范围，如 9～15 | (非必须,有默认)设置转动圈数的范围 |
+| setOneCircleMillisRange(long, long) | 每圈平均用时毫秒数的范围，如 400～600 | (非必须,有默认)设置平均转动一圈用时的范围 |
+| setOnLuckPanAnimatorEndListener(listener)  | 转盘停止监听器 | (非必须)设置转盘停止监听器 |
+| start(int) | 选中奖项的 ID | (必须)转盘开始转动，并停在 ID 值对应的位置上 |
 
 ## 使用
 
