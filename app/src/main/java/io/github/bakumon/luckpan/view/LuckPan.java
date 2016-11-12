@@ -116,7 +116,7 @@ public class LuckPan extends View {
      * @param minOneCircleMillis 最小转动圈数
      * @param maxOneCircleMillis 最大转动圈数
      */
-    public void setOneCircleMillisRange(int minOneCircleMillis, int maxOneCircleMillis) {
+    public void setOneCircleMillisRange(long minOneCircleMillis, long maxOneCircleMillis) {
         if (minOneCircleMillis > maxOneCircleMillis)
             this.minOneCircleMillis = minOneCircleMillis;
         this.maxOneCircleMillis = maxOneCircleMillis;
