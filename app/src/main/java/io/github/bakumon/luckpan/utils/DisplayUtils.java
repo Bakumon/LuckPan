@@ -3,6 +3,7 @@ package io.github.bakumon.luckpan.utils;
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
+
 /**
  * dp转px等
  * Created by bakumon on 16-11-12.

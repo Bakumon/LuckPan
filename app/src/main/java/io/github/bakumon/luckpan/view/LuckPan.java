@@ -70,6 +70,7 @@ public class LuckPan extends View {
 
     /**
      * 设置奖项实体集合
+     *
      * @param prizeVoList 奖项实体集合
      */
     public void setPrizeVoList(List<PrizeVo> prizeVoList) {
@@ -79,6 +80,7 @@ public class LuckPan extends View {
 
     /**
      * 设置转盘交替的深色
+     *
      * @param darkColor 深色 默认：Color.rgb(82, 182, 197)
      */
     public void setDarkColor(int darkColor) {
@@ -87,6 +89,7 @@ public class LuckPan extends View {
 
     /**
      * 设置转盘交替的浅色
+     *
      * @param shallowColor 浅色 默认：Color.rgb(186, 226, 232)
      */
     public void setShallowColor(int shallowColor) {
@@ -95,6 +98,7 @@ public class LuckPan extends View {
 
     /**
      * 设置转动圈数的范围
+     *
      * @param minCircleNum 最小转动圈数
      * @param maxCircleNum 最大转动圈数
      */
@@ -108,12 +112,13 @@ public class LuckPan extends View {
 
     /**
      * 设置平均转动一圈用时
+     *
      * @param minOneCircleMillis 最小转动圈数
      * @param maxOneCircleMillis 最大转动圈数
      */
     public void setOneCircleMillisRange(int minOneCircleMillis, int maxOneCircleMillis) {
         if (minOneCircleMillis > maxOneCircleMillis)
-        this.minOneCircleMillis = minOneCircleMillis;
+            this.minOneCircleMillis = minOneCircleMillis;
         this.maxOneCircleMillis = maxOneCircleMillis;
     }
 
@@ -190,6 +195,7 @@ public class LuckPan extends View {
 
     /**
      * 开始转动 抽奖
+     *
      * @param id 要停到对应奖项的 PrizeVo 实体的 id
      */
     public void start(final int id) {
