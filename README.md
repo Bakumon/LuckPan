@@ -2,7 +2,7 @@
 
 幸运转盘，可以控制选中指定的奖项。如下图，选择 ID 为 6 的奖项，在转盘停止后，选中 ID 为 6 的奖项。
 
-[demo下载](/apk/app-debug.apk)
+[demo下载](https://raw.githubusercontent.com/Bakumon/LuckPan/master/apk/app-debug.apk)
 
 ![screenshot](/screenshots/screenshot.jpg)
 
