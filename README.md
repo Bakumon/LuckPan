@@ -23,4 +23,44 @@ API:
 | setOnLuckPanAnimatorEndListener(listener)  | 转盘停止监听器 | 设置转盘停止监听器 |
 | start(int) | 选中奖项的 ID | 转盘开始转动，并停在 ID 值对应的位置上 |
 
+## 使用
+
+1.得到奖项数据集合
+
+```java
+List<PrizeVo> prizeVoList = new ArrayList<>();
+PrizeVo prizeVo;
+for (int i = 0; i < 16; i++) {
+    prizeVo = new PrizeVo();
+    prizeVo.id = i + "";
+    prizeVo.rate = i + "";
+    prizeVo.title = "×" + i;
+    prizeVoList.add(prizeVo);
+}
+```
+
+2.转盘设置奖项数据
+
+```java
+// 转盘设置奖项集合
+mLuckPan.setPrizeVoList(prizeVoList);
+```
+
+3.开始转动
+
+```java
+// 转到 ID 为 3 的奖项停止
+mLuckPan.start(3);
+```
+
+可选：设置转动停止监听器
+
+```java
+mLuckPan.setOnLuckPanAnimatorEndListener(new LuckPan.OnLuckPanAnimatorEndListener() {
+    @Override
+    public void onLuckPanAnimatorEnd(PrizeVo choicePrizeVo) {
+        Toast.makeText(MainActivity.this, "选中的ID：" + choicePrizeVo.id, Toast.LENGTH_SHORT).show();
+    }
+});
+```
 
